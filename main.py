@@ -7,9 +7,9 @@ response = requests.get(api_url)
 
 #Проверка запроса
 if response.status_code == 200:
-    # print(print(response.json()))
 
-    print(f'BTC to {response.json()['bpi'][f'{query}']['code']}')
-    print(f'Курс: {response.json()['bpi'][f'{query}']['rate']}')
+    print(f"BTC to {response.json()['bpi'][f'{query}']['code']}")
+    print(f"Курс: {response.json()['bpi'][f'{query}']['rate']}")
+
 
 
